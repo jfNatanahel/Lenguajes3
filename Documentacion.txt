@@ -1,0 +1,77 @@
+📌 ¿Qué es data-bs-ride="carousel"?
+Es un atributo de Bootstrap que le indica al carrusel que debe empezar a 
+funcionar automáticamente.
+
+Atributo	                Explicación
+data-bs-ride="carousel"	    Hace que el carrusel se mueva solo, sin que 
+                            el usuario haga clic.
+data-bs-slide="prev"	    Mueve el carrusel a la imagen anterior.
+data-bs-slide="next"	    Mueve el carrusel a la siguiente imagen.
+
+Si quitas data-bs-ride="carousel", el carrusel no cambiará de imagen auto
+máticamente, solo se moverá cuando hagas clic en los botones.
+
+📌 ¿Qué es <div>?
+<div> es una etiqueta de HTML que sirve para agrupar contenido. No tiene 
+un significado propio, pero se usa para organizar elementos en bloques 
+dentro de una página web.
+
+Ejemplo:
+<div>
+    <h1>Título</h1>
+    <p>Este es un párrafo dentro de un div.</p>
+</div>
+
+
+✅ Explicación de las clases Bootstrap:
+
+<div class="container text-center mt-4">
+    <h1 class="display-4 fw-bold text-success">¡Bienvenido a CuidaT!</h1>
+    <p class="lead text-muted">Comida saludable, rápida y deliciosa</p>
+</div>
+
+container → Le da márgenes laterales automáticos, así el contenido no 
+queda pegado a los bordes de la página.
+
+text-center → Centra todo el texto dentro del <div> (incluyendo el <h1>).
+
+mt-4 → Le da margen arriba para que no quede pegado al borde.
+
+display-4 → Hace que el texto sea grande y llamativo (Bootstrap tiene 
+display-1, display-2, etc., siendo display-1 el más grande).
+
+fw-bold → Hace que el texto sea negrita.
+
+text-success → Cambia el color del texto a verde (Bootstrap tiene colores
+ predeterminados como text-danger = rojo, text-primary = azul, etc.).
+
+lead → Hace que el texto sea más legible y elegante para descripciones.
+
+text-muted → Hace que el texto tenga un color gris suave (ideal para sub-
+títulos).
+
+🔥 3. Explicación de los estilos CSS
+font-size: 3rem; → Hace que el texto sea más grande.
+
+font-weight: bold; → Le da más grosor a las letras.
+
+text-transform: uppercase; → Convierte el texto en mayúsculas para más 
+presencia.
+
+letter-spacing: 2px; → Añade espacio entre las letras para mejor legibili
+dad.
+
+color: #28a745; → Usa un verde vibrante para un look fresco.
+
+text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); → Agrega una sombra para 
+efecto tridimensional.
+
+background: linear-gradient(45deg, #a7dfdc, #28a745); → Aplica un 
+degradado sutil en el fondo.
+
+padding: 10px 20px; → Da espacio interno para que el texto no esté pegado
+ a los bordes.
+
+border-radius: 10px; → Redondea los bordes para que se vea más moderno.
+
+display: inline-block; → Hace que el fondo solo ocupe lo que necesita el texto, sin extenderse por toda la página.

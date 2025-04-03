@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo practico 1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head> - <!-- Contiene informacion sobre la pagina (titulo, enlaces a CSS) -->
+
+<body><!-- Contiene el contenido visible de la pagina -->
+   
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Contactos</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Ubicacion</a>
+    </nav>
+    <div class="container text-center mt-4">
+        <h1 class="fancy-title">Bonfire</h1>
+        <p class="lead">Comida saludable, rápida y deliciosa</p>
+    </div>
+
+    <header>
+            <!-- Estructura del carrusel (slider) -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"> <!-- data-bs-ride="carousel" pase automaticamente entre imagenes -->
+            <div class="carousel-inner"> <!-- Contenedor de todas las imagenes del carrusel -->
+                <div class="carousel-item active"> <!-- Un slide del carrusel. El primero debe tener la clase active para que se muestre primero -->
+                    <img src="toast.jpg" class="d-block w-100" alt="Foto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="pancakes.jpg" class="d-block w-100" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="food.jpg" class="d-block w-100" alt="Foto 3">
+                </div>
+            </div>
+            <!-- Estructura del carrusel (slider) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> 
+                <!-- class="carousel-control-prev" Boton de anterior -->
+                <!-- data-bs-target="#carouselExample" Apunta al ID del carrusel que queremos controlar -->
+                <!-- data-bs-slide="prev" Mueve el carrusel hacia atras-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"> 
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        
+    </header>
+    <div class="content">
+        <p>¡Bienvenido a nuestra primera página web! COM1.</p>
+        <button onclick="alert('De inmediato empezamos!!')">Reserva tu pedido!</button>
+
+    </div>
+    <footer>
+        <p> Fernandez Jose Natanahel.</p>
+    </footer>
+    <!-- Bootstrap JS (para que el carrusel funcione) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

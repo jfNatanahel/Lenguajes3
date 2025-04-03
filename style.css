@@ -1,0 +1,86 @@
+/* Enlace a Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #2E8B57; /* Color de fondo1 */
+    color: #000000;
+}
+
+header {
+    background-color: #2E8B57; /* Color de fondo2 */
+    color: #F5F5DC; /* Color de texto */
+    text-align: center;
+    padding: 30px;
+}
+
+nav a {
+    color: #F5F5DC; /* Color de texto */
+    text-decoration: none;
+    margin: 15px;
+    padding: 10px 15px;
+
+    border-radius: 0.5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: white; /* Color de fondo3 */
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #f5f5f5;
+}
+.carousel img {
+    width: 100%;
+    height: 300px; /* Ajusta la altura a tu gusto */
+    object-fit: cover; /* Evita que la imagen se deforme */
+}
+.fancy-title {
+    font-size: 3rem; /* Tamaño grande */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    color: white; /* Un verde vibrante */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    background: linear-gradient(45deg, #a7dfdc, #28a745); /* Degradado de color */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */ 
+    display: inline-block; /* Ajusta el ancho al contenido */
+}
+
+.lead{
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #f5f5dc; /* Color de texto */
+    text-align: center; /* Centrado */
+    margin-top: 1px; /* Espaciado superior */
+}
+nav {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 30px; /* Espaciado entre los elementos */
+    padding: 1px; /* Un poco de espacio alrededor */
+}
