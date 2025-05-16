@@ -1,0 +1,26 @@
+<!-- 1. Creación de la estructura HTML 
+Elementos HTML básicos: - - - 
+Un campo de texto para ingresar números. 
+Botones para realizar diferentes operaciones matemáticas. 
+Un área (div) donde se mostrarán los resultados.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloquio</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <label>Ingrese un número:</label><input type="number" id="valor">
+    <button onclick="calcularDoble()">Doble</button>
+    <button onclick="calcularFactorial()">Factorial</button>
+    <button onclick="esPrimo()">¿Es primo?</button>
+    
+    <div id="resultado"></div>
+    <script src="/coloquio/scripts.js"></script>
+
+    
+</body>
+</html>
