@@ -1,0 +1,2 @@
+Mediante un html en visual code se le agrege la validacion para la entrada de informacion y con js relaice la 
+funcionalidad usando DOM de un carrito de compra de un e-comerce para la compra de libros
