@@ -24,17 +24,14 @@ function Agregar_Libro(){
 function mostrarLibros(){
     let lista = document.getElementById("lista_libros");
 
-    //IMPORTANTE!! BORRAR TODO LO Q HAYA DENTRO DEL DIV
     lista.innerHTML = "<b>Libros Disponibles</b>";
 
     for(let i=0; i<libros.length; i++){
-        let individual = libros[i]
+        let individual = libros[i];
         let nuevoLibro = document.createElement("p");
-        nuevoLibro.innerHTML = "Titulo del libro: "+ individual.titulo + "<br>" + 
-        "Precio: $"+individual.precio + "<br>" + 
-        "<button onclick="agregarAlCarrito('${individual.titulo}', ${individual.precio})">Añadir al carrito</button><hr>";
-        //innerHTML permite meter etiquetes HTML (no solo texto plano como innerText)
-        lista.appendChild(nuevoLibro); 
+        nuevoLibro.innerHTML = `Titulo del libro: ${individual.titulo} <br> Precio: $${individual.precio} <br> 
+            <button onclick="agregarAlCarrito('${individual.titulo}', ${individual.precio})">Añadir al carrito</button><hr>`;
+        lista.appendChild(nuevoLibro);
     }
 }
 function agregarAlCarrito(titulo, precio) {
