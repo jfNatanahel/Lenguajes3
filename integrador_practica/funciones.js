@@ -31,7 +31,7 @@ function agregarLibro(){
 
     // Evento al hacer clic en "Agregar al carrito"
     botonCarrito.onclick = function(){
-        agregarAlCarrito(entradaTitulo, entradaPrecio);
+        agregarAlCarrito(EntradaTitulo, EntradaPrecio);
     };
 
 
@@ -62,6 +62,10 @@ function agregarAlCarrito(titulo,precio){
     // Botón eliminar
     let botonEliminar = document.createElement("button");
     botonEliminar.textContent = "Eliminar";
+
+    // Evento para eliminar del DOM y del carrito
+    botonEliminar.onclick = function(){
+    ulCarrito.removeChild(liCarrito)};
 
     liCarrito.appendChild(botonEliminar);
     ulCarrito.appendChild(liCarrito)
