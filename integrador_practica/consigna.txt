@@ -1,0 +1,5 @@
+1) Cree un proyecto mediante un HTML en Visual Code se le agregue 
+la validación para la entrada de información y con js realice la 
+funcionalidad usando DOM de un carrito de compra de un e
+comerce para la compra de libros. Después pasar el link del deploy 
+en github para verlo.
