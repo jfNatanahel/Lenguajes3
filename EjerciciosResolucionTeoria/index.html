@@ -38,7 +38,29 @@
         <input type="text" id="nombreInput" class="form-control" placeholder="Escribe un nombre y presiona Enter">
         <button onclick="agregarNombre()" class="btn btn-secondary mt-3">Agregar nombre</button>
         <button onclick="ordenarNombresUsuario()" class="btn btn-success mt-3">Ordenar nombres ingresados A-Z</button>
+        <h3>Nombres ingresdos</h3>
+        <ul id="listaNombres"></ul>
+        <button onclick="mostrarNombres()" class="btn btn-success mt-3">Mostrar Nombres</button>
+
+        <!--Buscar nombres-->
+        <input type="text" id="buscarInputs" class="form-control" placeholder="Escribir el nombre a buscar">
+        <button onclick="buscarNombres()" class="btn btn-success mt-3">Buscar nombre</button>
+        
+
+
         <div id="resultadoUsuario" class="mt-3"></div>
+
+        <h2>Sumar todos los elementos de un array</h2>
+        <input type="number" id="numerosInput" class="form-control" placeholder="Ingresar numeros y presionar enter">
+        <button onclick="agregarNumero()" class="btn btn-secondary mt-3">Agregar numero</button>
+        <button onclick="sumaTotal()" class="btn btn-success mt-3">Calcular la suma total de los elementos</button>
+
+        <h3>Números ingresados:</h3>
+        <ul id="listaNumeros"></ul>
+        <button onclick="mostrarNumeros()" class="btn btn-secondary mt-3">Mostrar Numeros</button>
+        <div id="resultadoSuma" class="mt-3"></div>
+
+
     </div>
     
 </body>
