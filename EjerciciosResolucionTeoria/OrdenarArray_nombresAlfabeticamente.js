@@ -91,3 +91,32 @@ function buscarNombres(){
     
 
 }
+function listaDinamica(){
+    let ul = document.getElementById("listaDinamica");
+    ul.innerHTML = "";  // Limpio la lista antes de agregar de nuevo
+
+    for (let nombre of nombresUsuario){
+        let li = document.createElement("li");
+        li.textContent = nombre;
+        ul.appendChild(li);
+    }
+}
+function modificarContenido(id, nuevoTexto) {
+    let elemento = document.getElementById(id); //Obtengo el elemento del id
+    if (elemento) {
+        elemento.textContent = nuevoTexto; //textContent cambia al nuevo texgto
+    } else {
+        alert("No se encontró ningún elemento con ese ID.");
+    }
+}
+// Obtengo los elementos del DOM y los guardo en variables
+let boton = document.getElementById("miBoton");
+let parrafo = document.getElementById("miParrafo");
+
+// Defino una función para cambiar el estilo
+function cambiarEstilo() {
+  parrafo.classList.toggle("resaltado");
+}
+
+// Le agrego un "escuchador de eventos" al botón
+boton.addEventListener("click", cambiarEstilo);
